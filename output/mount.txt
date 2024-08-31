@@ -1,0 +1,5 @@
+none on /mnt/wsl type tmpfs (rw,relatime)
+drivers on /usr/lib/wsl/drivers type 9p (ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access=client,msize=65536,trans=fd,rfd=7,wfd=7)
+none on /usr/lib/modules type tmpfs (rw,relatime)
+none on /usr/lib/modules/5.15.153.1-microsoft-standard-WSL2 type overlay (rw,nosuid,nodev,noatime,lowerdir=/modules,upperdir=/modules_overlay/rw/upper,workdir=/modules_overlay/rw/work)
+/dev/sdc on / type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)
